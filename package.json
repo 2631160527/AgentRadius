@@ -1,0 +1,26 @@
+{
+  "name": "agent-radius",
+  "version": "0.1.0",
+  "description": "Explainable blast radius analysis for autonomous agent actions.",
+  "type": "module",
+  "bin": {
+    "agent-radius": "apps/cli/bin/agent-radius.mjs"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc -p tsconfig.json",
+    "agent-radius": "tsx apps/cli/src/main.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "js-yaml": "^4.1.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8"
+  }
+}

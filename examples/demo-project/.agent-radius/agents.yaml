@@ -1,0 +1,15 @@
+agents:
+  - id: billing-agent
+    name: Billing Agent
+    capabilities:
+      - payment
+    touches:
+      - src/payment/**
+      - db:payments
+  - id: shipping-agent
+    name: Shipping Agent
+    capabilities:
+      - shipping
+    touches:
+      - src/shipping/**
+      - db:shipments
